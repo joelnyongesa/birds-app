@@ -8,7 +8,6 @@ from models import db, Bird
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URI')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://joel:pIFQ4Rjdqcwg0yQjJSS3R8DTIHPH8xTi@dpg-cktbsee5or3s7389dd00-a.oregon-postgres.render.com/bird_app_pnzw'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.json.compact = False
 
